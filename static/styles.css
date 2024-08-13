@@ -1,8 +1,9 @@
 .container {
     width: 100%;
-    margin: 0 auto;
-  }
-.justify-content-center{
-  justify-content:center;
-  
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Optional: This will center items vertically as well */
 }
