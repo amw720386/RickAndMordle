@@ -1,6 +1,6 @@
 from ramapi import *
 import random
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -8,13 +8,11 @@ app = Flask(__name__)
 def main():
     charID = random.randint(1,826)
     char = ramapi.Character.get(charID)
-    return f'''
-<h1>{char['name']}</h1>
+    name = char['name']
+    print(name)
 
-<img src="{char['image']}">
-'''
-
+    return render_template('index.html', char=char, name=name)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0", port=8000, debug=True)
 
