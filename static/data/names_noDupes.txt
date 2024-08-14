@@ -498,28 +498,28 @@ Hologram Rick
 Fascist Rick
 Fascist Morty
 Fascist Mr. President
-Fascist Rick�s Clone
+Fascist Rick's Clone
 -
 Fascist Shrimp Rick
-Fascist Shrimp Rick�s Clone
+Fascist Shrimp Rick's Clone
 Fascist Shrimp Morty
 Fascist Shrimp SS
 Fascist Teddy Bear Rick
-Fascist Teddy Bear Rick�s Clone
+Fascist Teddy Bear Rick's Clone
 Bully
 Anchorman
 Anchorwoman
-Morty�s Lawyer
+Morty's Lawyer
 Judge
 Public Opinion Judge
 Caterpillar Mr. Goldenfold
 Wasp Rick
-Wasp Rick�s Clone
+Wasp Rick's Clone
 Wasp Morty
 Wasp Summer
 Wasp Jerry
 Wasp Beth
-Caterpillar Mr. Goldenfold�s Larvae
+Caterpillar Mr. Goldenfold's Larvae
 Boglin
 Kirkland Brand Mr. Meeseeks
 Glootie
@@ -529,7 +529,7 @@ Monogatron Leader
 Lizard
 Deliverance
 Tony
-Tony�s Wife
+Tony's Wife
 Monogatron Queen
 Tony's Dad
 Jeff
@@ -563,7 +563,7 @@ Balthromaw
 The Wizard
 Talking Cat
 Debrah
-Debrah�s Partner
+Debrah's Partner
 -
 Slut Dragon
 Shadow Jacker
@@ -602,7 +602,7 @@ Christmas Storyteller
 Cookies Guy
 Crossy
 Female Scorpion
-Floaty Bloody Man�s Daughter
+Floaty Bloody Man's Daughter
 Goomby
 Hairspray Fan
 Jesus Christ
@@ -634,8 +634,8 @@ Train Cops
 Train Cops Instructor
 Darth Poopybutthole
 -
-Morty�s Disguise
-Rick�s Disguise
+Morty's Disguise
+Rick's Disguise
 Uncle Nibbles
 Angry Glorzo
 Bruce
@@ -656,9 +656,9 @@ Heroine Keith
 Impervious to Acid SWAT Officer
 Johnny Carson
 Sonia Sotomayor
-Morty�s Father-in-law
-Morty�s Mother-in-law
-Morty�s Girlfriend
+Morty's Father-in-law
+Morty's Mother-in-law
+Morty's Girlfriend
 Gaia
 Reggie
 Ticktock
@@ -759,7 +759,7 @@ Giant Assassin Hidden in the Statue of Liberty
 Turkey Morty
 Turkey Rick
 Turkey President Curtis
-Mart�nez
+Mart'nez
 Marvin
 Jackey
 Native Alien

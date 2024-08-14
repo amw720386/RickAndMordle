@@ -140,3 +140,69 @@ h1 {
 .card-list .flip-card-back li {
     margin: 0.5vw 0;
 }
+
+.guess-container {
+    position: relative; 
+    margin-top: 0.5vh; 
+    margin-bottom: 1vh; 
+    width: 24vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guess-input {
+    width: 100%; 
+    padding: 1vw;
+    margin: 0.5vw 0;
+    border-radius: 10px;
+    border: 1px solid #2c3343;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    box-sizing: border-box;
+}
+
+.suggestions-box {
+    position: absolute;
+    top: calc(100% - 9vh); 
+    left: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%; 
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.suggestion-item {
+    padding: 0.5vw;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.submit-button {
+    margin-top: 1vw;
+    padding: 0.8vw 2vw;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #006400; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.submit-button:disabled {
+    background-color: #a9a9a9; 
+    cursor: not-allowed;
+}

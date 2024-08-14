@@ -1,6 +1,6 @@
 from ramapi import *
 import random
-from flask import Flask, render_template
+from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
 
@@ -12,7 +12,10 @@ def main():
         charID = random.randint(1,826)
 
     char = ramapi.Character.get(charID)
+    global name
     name = char['name']
+
+    print(name)
 
     results = ramapi.Character.filter(name=name)
 
@@ -57,6 +60,18 @@ def main():
 def help():
     return render_template('help.html')
 
+@app.route('/check_guess', methods=['POST'])
+def check_guess():
+    user_guess = request.json.get('guess')
+    character_name = name
+
+    print(user_guess)
+    print(character_name)
+
+    if user_guess == character_name:  
+        return jsonify({"result": "correct"})
+    else:
+        return jsonify({"result": "incorrect"})
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8000, debug=True)

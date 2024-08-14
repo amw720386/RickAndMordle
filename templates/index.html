@@ -50,6 +50,11 @@
                     </div>
                 </div> 
             </div>
+            <div class="guess-container">
+                <input type="text" id="guess-input" placeholder="Enter your guess..." class="guess-input">
+                <div id="suggestions" class="suggestions-box"></div>
+                <button id="submit-guess" class="submit-button" disabled>&#8594;</button>
+            </div>
         </div>
     </div>
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
