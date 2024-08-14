@@ -7,6 +7,29 @@ body {
     flex-direction: column;
 }
 
+.help-popup {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    background-color: #1aeed3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+}
+
+.help-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.help-link:hover {
+    text-decoration: underline;
+}
+
 .container {
     font-family: 'Helvetica';
     background: transparent; 
@@ -58,7 +81,7 @@ h1 {
 }
 
 .card-list {
-    height: 24vw; 
+    height: 12vw; 
     overflow: hidden; 
 }
 
