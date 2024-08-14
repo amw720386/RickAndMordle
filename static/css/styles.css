@@ -208,7 +208,7 @@ h1 {
 }
 
 /* General styles for mobile devices */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .game-container {
         width: 90vw; /* Makes the game container 90% of the viewport width */
         margin-bottom: 2vw; /* Adjust margin for mobile */
