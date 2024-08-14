@@ -50,16 +50,16 @@ h1 {
     width: 24vw; 
     perspective: 1000px; 
     cursor: pointer; 
-    margin: 1vw 0; /* Add margin to space out the cards */
+    margin: 1vw 0; 
 }
 
 .card-regular {
-    height: 6vw; /* Fixed height for regular cards */
+    height: 6vw; 
 }
 
 .card-list {
-    height: 24vw; /* Fixed height for the last card */
-    overflow: hidden; /* Hide overflow of the card itself */
+    height: 24vw; 
+    overflow: hidden; 
 }
 
 .flip-card-inner {
@@ -80,7 +80,7 @@ h1 {
     align-items: center;
     flex-direction: column;
     border-radius: 20px; 
-    box-sizing: border-box; /* Include padding in height */
+    box-sizing: border-box; 
 }
 
 .flip-card-front {
@@ -91,27 +91,27 @@ h1 {
 .flip-card-back {
     background-color: #2c3343; 
     color: #fff; 
-    transform: rotateY(180deg); /* Hide the back by default */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding: 2vw; /* Ensure content does not touch edges */
-    box-sizing: border-box; /* Include padding in height */
-    display: flex; /* Use Flexbox to handle content alignment and scrolling */
-    flex-direction: column; /* Stack content vertically */
-    align-items: flex-start; /* Align items to the start (top) */
-    height: 100%; /* Ensure it fills the card’s height */
+    transform: rotateY(180deg);
+    padding: 2vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 100%; 
 }
 
 .flip-card.flipped .flip-card-inner {
-    transform: rotateY(180deg); /* Rotate the card to show the back */
+    transform: rotateY(180deg); 
 }
 
 .card-list .flip-card-back ul {
+    overflow-y: auto; 
     list-style-type: none;
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    text-align: left; /* Align text to the left */
-    width: 100%; /* Ensure the list occupies full width */
+    text-align: left;
+    width: 100%;
 }
 
 .card-list .flip-card-back li {
