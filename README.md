@@ -10,7 +10,7 @@ Deployed to [Vercel](https://rick-and-mordle.vercel.app/)
 - [Rickandmortyapi Python Wrapper](https://github.com/curiousrohan/ramapi)
 - Flask
 
-## Contributions
+## To Run Locally
 
 1. Clone the Repo
 
@@ -29,3 +29,9 @@ cd project-root && pip install -r requirements.txt
 ```
 python app.py
 ```
+
+## Future Work
+
+Currently working as of the release of the entirity of season 5, (last known locations and pictures relative to that)
+
+Won't update with the release of new seasons unless the Rick And Morty API updates
