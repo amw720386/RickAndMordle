@@ -206,3 +206,28 @@ h1 {
     background-color: #a9a9a9; 
     cursor: not-allowed;
 }
+
+@media (max-width: 768px) {
+    .game-container {
+        width: 90vw; 
+        margin-bottom: 2vw; 
+    }
+
+    .help-popup {
+        top: 10%;
+        font-size: 14px; 
+        padding: 5px 10px; 
+    }
+
+    .title-img {
+        width: 80vw; 
+    }
+
+    .char-img {
+        width: 80vw; 
+    }
+
+    .guess-container {
+        width: 90vw;
+    }
+}
