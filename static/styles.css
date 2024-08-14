@@ -1,9 +1,0 @@
-.container {
-    width: 100%;
-}
-
-.justify-content-center {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Optional: This will center items vertically as well */
-}

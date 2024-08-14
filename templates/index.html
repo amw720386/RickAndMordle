@@ -3,17 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Flask App</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Rick and Mordle</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <div class="container">
         <div class="justify-content-center">
-            <img src="{{ char['image'] }}" alt="Character Image">
+            <img src="{{ url_for('static', filename='images/Title.png') }}" alt="Title" class="title-img"/>
         </div>
-        <div class="justify-content-center">
-            <h1>{{ char['name'] }}</h1>
+        <div class="game-container">
+            <img src="{{ char['image'] }}" alt="Character Image" class="char-img">
+            <div class="flip-card card-regular">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Last Location</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>{{ latestLocation }}</h1>
+                    </div>
+                </div> 
+            </div>
+            <div class="flip-card card-regular">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Origin</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>{{ origin }}</h1>
+                    </div>
+                </div> 
+            </div>
+            <div class="flip-card card-list">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Episodes Seen</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            {% for episode in seenIn %}
+                                <li>{{ episode }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div> 
+            </div>
         </div>
     </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
