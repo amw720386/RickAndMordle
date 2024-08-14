@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play - Rick and Mordle</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/help.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>How to Play Rick and Mordle</h1>
+        </header>
+        
+        <section class="instructions">
+            <h2>Objective of the Game</h2>
+            <p>The goal of Rick and Mordle is to match a picture of a character with their name given their corresponding last seen location, origin, and episodes seen in. Test your knowledge of the show and try to achieve the highest score possible!</p>
+            
+            <h2>Notes</h2>
+            <ul>
+                <li>This is updated respective of season 5, and as of August 14th, 2024 the Rick and Morty API has not been updated further.</li>
+                <li>There may be errors with how the information is displayed, or what information is displayed.</li>
+                <li>Issues with this game are a result of the API. (There are 4 inputs for plain old Rick Sanchez for some reason)</li>
+            </ul>
+        </section>
+        
+        <footer class="footer">
+            <a href="/" class="home-link">
+                <img src="{{ url_for('static', filename='images/Title.png') }}" alt="Home" class="home-icon"/>
+            </a>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

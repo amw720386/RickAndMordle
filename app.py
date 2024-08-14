@@ -11,52 +11,21 @@ def main():
     while charID in [19,66,104,189,249]:
         charID = random.randint(1,826)
 
-    charID = 1
-
     char = ramapi.Character.get(charID)
     name = char['name']
 
     results = ramapi.Character.filter(name=name)
 
-    originUnknown = False
-    lastSeenUnknown = False
+    amntofEpisodes = 0
     seenIn = []
     origin = ''
     latestLocation = ''
     for result in results['results']:
 
-        if not result['origin']['url']:
-            originUnknown = True
-
-        if not originUnknown:
-            if result['origin']['url'][-2] == '/':
-                if origin == '':
-                    origin = int(result['origin']['url'][-1])   
-                elif int(result['origin']['url'][-1]) < origin:
-                    origin = int(result['origin']['url'][-1])
-            else:
-                if origin == '':
-                    origin = int(result['origin']['url'][-2:])   
-                elif int(result['origin']['url'][-2:]) < origin:
-                    origin = int(result['origin']['url'][-2:])
-
-        if not result['location']['url']:
-            lastSeenUnknown = True
-
-        if not lastSeenUnknown:                
-            if result['location']['url'][-2] == '/':
-                if latestLocation == '':
-                    latestLocation = int(result['location']['url'][-1])             
-                elif int(result['location']['url'][-1]) > latestLocation:
-                    latestLocation = int(result['location']['url'][-1])
-            else:
-                if latestLocation == '':
-                    latestLocation = int(result['location']['url'][-2:])   
-                elif int(result['location']['url'][-2:]) > latestLocation:
-                    latestLocation = int(result['location']['url'][-2:])
-
-        originUnknown = False
-        lastSeenUnknown = False
+        if len(result['episode']) > amntofEpisodes:
+            amntofEpisodes = len(result['episode'])
+            origin = result['origin']['name']
+            latestLocation = result['location']['name']
 
         for episode in result['episode']:
             season = 0
@@ -82,18 +51,12 @@ def main():
     seenIn = list(dict.fromkeys(seenIn))
     seenIn.sort()
 
-    print(seenIn)
-
-    if origin == '':
-        origin = 'Unknown'
-    else:
-        origin=ramapi.Location.get(origin)['name']
-    if latestLocation == '':
-        latestLocation = 'Unknown'
-    else:
-        latestLocation=ramapi.Location.get(latestLocation)['name']
-
     return render_template('index.html', char=char, name=name, seenIn=seenIn, latestLocation=latestLocation, origin=origin)
+
+@app.route("/help")
+def help():
+    return render_template('help.html')
+
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8000, debug=True)
