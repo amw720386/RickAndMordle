@@ -207,27 +207,52 @@ h1 {
     cursor: not-allowed;
 }
 
-@media (max-width < 768px) {
+/* General styles for mobile devices */
+@media (max-width: 600px) {
     .game-container {
-        width: 95vw; 
-        margin-bottom: 2vw; 
+        width: 90vw; /* Makes the game container 90% of the viewport width */
+        margin-bottom: 2vw; /* Adjust margin for mobile */
     }
 
     .help-popup {
         top: 10%;
-        font-size: 14px; 
-        padding: 5px 10px; 
+        left: 0;
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 5px 10px; /* Adjust padding for mobile */
     }
 
     .title-img {
-        width: 80vw; 
+        width: 80vw; /* Adjust title image width on mobile */
     }
 
     .char-img {
-        width: 80vw; 
+        width: 80vw; /* Adjust character image width on mobile */
+    }
+
+    .flip-card {
+        width: 80vw; /* Adjust character image width on mobile */
     }
 
     .guess-container {
-        width: 90vw;
+        width: 90vw; /* Adjusts guess container width on mobile */
+    }
+}
+
+/* Additional adjustments for very small screens (optional) */
+@media (max-width: 400px) {
+    .title-img {
+        width: 100vw; /* Make title image full width on very small screens */
+    }
+
+    .char-img {
+        width: 100vw; /* Make character image full width on very small screens */
+    }
+
+    .flip-card {
+        width: 100vw; /* Adjust character image width on mobile */
+    }
+
+    .game-container {
+        padding: 2vw; /* Adjust padding for very small screens */
     }
 }

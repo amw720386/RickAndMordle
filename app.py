@@ -15,8 +15,6 @@ def main():
     global name
     name = char['name']
 
-    print(name)
-
     results = ramapi.Character.filter(name=name)
 
     amntofEpisodes = 0
@@ -64,9 +62,6 @@ def help():
 def check_guess():
     user_guess = request.json.get('guess')
     character_name = name
-
-    print(user_guess)
-    print(character_name)
 
     if user_guess == character_name:  
         return jsonify({"result": "correct"})
