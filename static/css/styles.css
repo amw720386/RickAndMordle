@@ -207,9 +207,9 @@ h1 {
     cursor: not-allowed;
 }
 
-@media (max-width: 768px) {
+@media (max-width < 768px) {
     .game-container {
-        width: 90vw; 
+        width: 95vw; 
         margin-bottom: 2vw; 
     }
 
